@@ -1,0 +1,47 @@
+key Concept: Function arguments are evaluated left → right
+
+In JavaScript, a function that returns nothing automatically returns:
+undefined
+
+ex- let x = console.log("Hello");
+console.log(x); - output: Hello /n undefined
+
+let r = console.log("test");
+console.log("Return value =", r); - output: test /n Return value = undefined
+
+✅ What Comma Operator Does
+(a, b)
+
+Means:
+
+Run a
+
+Ignore its value
+
+Return b
+
+So here:
+
+(console.log(result), "mismatched string variable")
+
+Steps:
+
+1️⃣ console.log(result) → prints result
+2️⃣ Return "mismatched string variable"
+
+So outer console.log() receives:
+
+console.log("mismatched string variable")
+
+Only one argument → no undefined.
+
+https://chatgpt.com/s/t_69979b35495c819195a79db2e2ca4934
+https://chatgpt.com/s/t_69979d386ffc8191b635031bdbb27b44
+https://chatgpt.com/s/t_69979d202404819189de32bcefa8c486
+
+
+🔒 One-line Mental Rule
+
+Comma operator returns the LAST expression only.
+
+So undefined disappears.

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>walking the DOM</title>
+    <script>
+        console.log(document.body);// writtens null because the script is executed before the body is parsed. To fix this, we can move the script tag to the end of the body, or we can use the DOMContentLoaded event to ensure that the script runs after the DOM is fully loaded.
+    </script>
+</head> 
+<body>
+    Hello World
+    <span>Walking the DOM</span>
+    <script src="script.js"></script>
+</body>
+</html>]

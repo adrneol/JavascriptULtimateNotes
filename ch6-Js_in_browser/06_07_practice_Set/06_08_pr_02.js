@@ -1,0 +1,16 @@
+const canDrive = (age)=>{
+    return age >= 18 ? true : false;
+}
+
+runagain = true;
+while(runagain){
+    let age = prompt("Enter your age: ");
+    age = Number.parseInt(age);
+    if(canDrive(age)){
+        alert("You can drive");
+    }
+    else{
+        alert("You cannot drive");
+    }
+    runagain = confirm("Run again?");
+}
