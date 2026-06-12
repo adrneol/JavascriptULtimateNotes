@@ -12,5 +12,5 @@ console.log(object)
 object.industry= false
 console.log(object)
 console.log(object.good)
-object.check="lesse"
+object.check="lesse" //inserting new key-value to the current object.
 console.log(object)

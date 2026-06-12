@@ -23,3 +23,17 @@ let amount = str2.match(/\d+/)[0];
 console.log(amount);
 let amount2 = Number.parseInt(str2.slice("please give us Rs ".length));
 console.log(amount2);
+
+
+
+// ( / regex pattern/ ) - regular expression, string pattern matching
+// \d - digit character , 0-9
+// + - one or more times, \d+ means one or more digit characters
+
+// To find all numbers in the sentence, you add a g (which stands for Global search) after the second slash:
+
+let str3 = "please give us Rs 1000 and 500";
+let amounts = str3.match(/\d+/g); 
+console.log(amounts);
+// Result: ["1000", "500"]
+// (Note: When using g, you don't use [0] at the end, because you want the whole list of numbers, not just the first one).

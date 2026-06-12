@@ -1,6 +1,6 @@
 // switch case
 const fruits={
-    apple : "0.9$",   // js convers apple to string automatically
+    apple : "0.9$",   // js converts apple to string automatically
     "banana" : "1.1$",
     "mango" : "2.5$",
     "pineapple" : "3$"
@@ -15,7 +15,7 @@ readline.question('Enter the fruit name', (fruit) => {
     fruit = fruit.toLowerCase(); // Convert the input to lowercase to handle case sensitivity       
   switch(fruit){
     case "apple":
-        console.log("Apple price is:", fruits.apple);
+        console.log("Apple price is:", fruits[fruit]); // or fruits.apple.
         break;
     case "banana":
         console.log("Banana price is:", fruits.banana);
